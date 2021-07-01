@@ -1,0 +1,11 @@
+---
+## list of HDFS directories to deploy
+hdfs_dirs_list: []
+
+# the OS user used as the 'become_user' for the hdfs dir deploy tasks
+hdfs_dir_default_become_user: hdfs
+
+## following role default vars are undefined, thus commented out
+# hdfs_dir_default_owner: 
+# hdfs_dir_default_mode: 
+# hdfs_dir_default_acl: 

@@ -1,0 +1,6 @@
+---
+- name: "create the hdfs directories  (count {{ hdfs_dirs_list |length }})"
+  include_tasks: deploy-hdfs-dirs.yml
+  with_items: "{{ hdfs_dirs_list }}"
+  loop_control:
+    loop_var: dir
